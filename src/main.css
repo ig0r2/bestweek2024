@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "OffBit";
+    src: url("/fonts/OffBit-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "OffBit";
+    src: url("/fonts/OffBit-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "HomeVideo";
+    src: url("/fonts/HomeVideo-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "HomeVideo";
+    src: url("/fonts/HomeVideo-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Covid19";
+    src: url("/fonts/Covid19.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  :root {
+    background-color: #9ebc4a;
+    scroll-behavior: smooth;
+  }
+  a {
+    @apply text-white hover:text-green-secondary;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+
+  body {
+    cursor: url("/images/cursors/sword@0.5x.png"), auto;
+  }
+}
+
+@layer components {
+  .spaceship {
+    animation: moveSpaceship 3s ease-in-out infinite;
+  }
+  /* Keyframe animation to move the spaceship around */
+  @keyframes moveSpaceship {
+    0% {
+      transform: translate(0, 0); /* Start centered */
+    }
+    25% {
+      transform: translate(-50px, -25px); /* Move left and slightly up */
+    }
+    50% {
+      transform: translate(25px, -50px); /* Move right and further up */
+    }
+    75% {
+      transform: translate(-50px, -25px); /* Move back left */
+    }
+    100% {
+      transform: translate(0, 0); /* Return to starting point */
+    }
+  }
+}
