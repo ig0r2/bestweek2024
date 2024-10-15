@@ -1,0 +1,234 @@
+@tailwind components;
+
+@layer components {
+  .whale {
+    animation: moveWhale 30s ease-in-out infinite;
+  }
+  @keyframes moveWhale {
+    0% {
+      transform: translate(0, 0rem);
+    }
+    25% {
+      transform: translate(40vw, 0rem);
+    }
+    50% {
+      transform: translate(90vw, 3rem);
+    }
+    51% {
+      transform: translate(90vw, 3rem) scaleX(-1);
+    }
+    75% {
+      transform: translate(35vw, 3rem) scaleX(-1);
+    }
+    100% {
+      transform: translate(0, 0rem) scaleX(-1);
+    }
+  }
+
+  .shark {
+    animation: moveShark 25s ease-in-out infinite;
+  }
+  @keyframes moveShark {
+    0% {
+      transform: translate(0, 10em);
+    }
+    25% {
+      transform: translate(60vw, 10em);
+    }
+    50% {
+      transform: translate(90vw, 15em);
+    }
+    51% {
+      transform: translate(90vw, 15em) scaleX(-1);
+    }
+    /* 75% {
+      transform: translate(50vw, 15em) scaleX(-1);
+    } */
+    100% {
+      transform: translate(0, 10em) scaleX(-1);
+    }
+  }
+
+  .tuna {
+    animation: moveTuna 35s ease-in-out infinite;
+  }
+  @keyframes moveTuna {
+    0% {
+      transform: translate(0, 0em);
+    }
+    25% {
+      transform: translate(35vw, 18em);
+    }
+    50% {
+      transform: translate(90vw, 18em);
+    }
+    51% {
+      transform: translate(90vw, 18em) scaleX(-1);
+    }
+    75% {
+      transform: translate(50vw, 10em) scaleX(-1);
+    }
+    100% {
+      transform: translate(0, 0em) scaleX(-1);
+    }
+  }
+
+  .squid {
+    animation: moveSquid 35s ease-in-out infinite;
+  }
+  @keyframes moveSquid {
+    0% {
+      transform: translate(10vw, 5rem);
+    }
+    25% {
+      transform: translate(10vw, 36rem);
+    }
+    50% {
+      transform: translate(10vw, 40rem);
+    }
+    75% {
+      transform: translate(10vw, 25em);
+    }
+    100% {
+      transform: translate(10vw, 5rem);
+    }
+  }
+
+  .seaturtle {
+    animation: moveSeaturtle 50s ease-in-out infinite;
+  }
+  @keyframes moveSeaturtle {
+    0% {
+      transform: translate(0, 10rem) scaleX(-1);
+    }
+    25% {
+      transform: translate(35vw, 18rem) scaleX(-1);
+    }
+    50% {
+      transform: translate(90vw, 18rem) scaleX(-1);
+    }
+    51% {
+      transform: translate(90vw, 18rem);
+    }
+    60% {
+      transform: translate(90vw, 18rem);
+    }
+    75% {
+      transform: translate(50vw, 10rem);
+    }
+    100% {
+      transform: translate(0, 10rem);
+    }
+  }
+
+  .parrot {
+    animation: moveParrot 42s ease-in-out infinite;
+  }
+  @keyframes moveParrot {
+    0% {
+      transform: translate(0, 15rem) scaleX(-1);
+    }
+    25% {
+      transform: translate(20vw, 10rem) scaleX(-1);
+    }
+    50% {
+      transform: translate(105vw, 8rem) scaleX(-1);
+    }
+    51% {
+      transform: translate(105vw, 8rem);
+    }
+    60% {
+      transform: translate(105vw, 8rem);
+    }
+    75% {
+      transform: translate(60vw, 15rem);
+    }
+    100% {
+      transform: translate(0, 15rem);
+    }
+  }
+
+  .hammerhead {
+    animation: moveHammerhead 28s ease-in-out infinite;
+  }
+  @keyframes moveHammerhead {
+    0% {
+      transform: translate(-10vw, 10em);
+    }
+    25% {
+      transform: translate(40vw, 10em);
+    }
+    50% {
+      transform: translate(105vw, 15em);
+    }
+    51% {
+      transform: translate(105vw, 15em) scaleX(-1);
+    }
+    /* 75% {
+      transform: translate(50vw, 15em) scaleX(-1);
+    } */
+    100% {
+      transform: translate(-10vw, 10em) scaleX(-1);
+    }
+  }
+
+  .seahorse {
+    animation: moveSeahorse 20s ease-in-out infinite;
+  }
+  @keyframes moveSeahorse {
+    0% {
+      transform: translate(90vw, 10em);
+    }
+    25% {
+      transform: translate(85vw, 9em);
+    }
+    50% {
+      transform: translate(90vw, 9em);
+    }
+    75% {
+      transform: translate(85vw, 10em);
+    }
+    100% {
+      transform: translate(90vw, 10em);
+    }
+  }
+
+  .angler {
+    animation: moveAngler 60s ease-in-out infinite;
+  }
+  @keyframes moveAngler {
+    0% {
+      transform: translate(5vw, 10rem) scaleX(-1);
+    }
+    25% {
+      transform: translate(80vw, 18rem) scaleX(-1);
+    }
+    50% {
+      transform: translate(95vw, 18rem) scaleX(-1);
+    }
+    51% {
+      transform: translate(95vw, 18rem);
+    }
+    60% {
+      transform: translate(95vw, 18rem);
+    }
+    75% {
+      transform: translate(50vw, 10rem);
+    }
+    100% {
+      transform: translate(5vw, 10rem);
+    }
+  }
+
+  .bubble {
+    animation: moveBubble 10s ease-in infinite;
+  }
+  @keyframes moveBubble {
+    0% {
+      transform: translate(5vw, 10rem);
+    }
+    100% {
+      transform: translate(5vw, -40rem);
+    }
+  }
+}
