@@ -62,6 +62,15 @@
   body {
     cursor: url("/images/cursors/sword@0.5x.png"), auto;
   }
+  .cursor-pickaxe {
+    cursor: url("/images/cursors/diamond-pickaxe.png"), auto;
+  }
+  .cursor-lightsaber {
+    cursor: url("/images/cursors/lightsaber.png"), auto;
+  }
+  .cursor-fishing {
+    cursor: url("/images/cursors/fishing-rod.png"), auto;
+  }
 }
 
 @layer components {
