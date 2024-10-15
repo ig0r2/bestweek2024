@@ -69,3 +69,29 @@ setTimeout(
     }),
   2000,
 );
+
+const generateBubbles = (count) => {
+  for (let i = 0; i < count; i++) {
+    const bubble = document.createElement("img");
+    bubble.classList.add("absolute");
+    bubble.src = "/images/assets/bubble-fill.png";
+    bubble.style.bottom = "50px";
+    bubble.style.left = `${random(0, 100)}vw`;
+    bubble.style.width = `${random(4, 12)}px`;
+
+    const randomDuration = random(8, 30);
+    bubble.style.animation = `moveBubble ${randomDuration}s linear`;
+
+    container.appendChild(bubble);
+
+    // Remove bubble after animation ends
+    bubble.addEventListener("animationend", () => {
+      bubble.remove();
+    });
+  }
+};
+
+// Generate 10 bubbles every 2 seconds
+setInterval(() => {
+  generateBubbles(10);
+}, 2000);
