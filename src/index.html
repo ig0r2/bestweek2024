@@ -12,53 +12,47 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="sticky left-0 top-0 z-50 mx-auto w-full bg-green-primary p-3 px-6 font-homevideo shadow-[0em_0.1em_0.75em_0.1em_black]">
-      <div class="flex items-center justify-between">
+    <nav class="sticky left-0 top-0 z-50 mx-auto w-full font-homevideo">
+      <div
+        class="flex items-center justify-between bg-green-primary p-3 px-6 shadow-[0em_0.1em_0.75em_0.1em_black]">
         <!-- Logo -->
         <a href="/" class="w-24 pt-2">
           <img src="/images/logos/bestweek-logo-text.png" alt="logo" />
         </a>
-        <div class="hidden space-x-3 md:flex">
-          <a
-            href="#o-nama"
-            class="rounded-full p-3 px-6 text-white hover:text-green-secondary"
-            >O nama</a
-          >
-          <a
-            href="#agenda"
-            class="rounded-full p-3 px-6 text-white hover:text-green-secondary"
-            >Agenda</a
-          >
-          <a
-            href="#predavaci"
-            class="rounded-full p-3 px-6 text-white hover:text-green-secondary"
-            >Predavači</a
-          >
+        <!-- Desktop Menu -->
+        <div class="desktop-menu">
+          <a href="#o-nama">O nama</a>
+          <a href="#agenda">Agenda</a>
+          <a href="#predavaci">Predavači</a>
+          <a href="#organizatori">Organizatori</a>
         </div>
         <a
           href=""
           target="_blank"
-          class="baseline bg-primary hover:bg-primaryHover rounded-full p-3 px-6 text-white hover:text-green-secondary"
+          class="bg-primary hidden p-3 px-6 text-white hover:text-green-secondary md:block"
           >Prijavi se</a
         >
+        <!-- Hamburger Button -->
+        <button
+          id="menu-toggle"
+          class="relative z-50 text-white focus:outline-none md:hidden">
+          <!-- Hamburger Icon -->
+          <div class="hamburger-icon">
+            <span class="bar top-bar"></span>
+            <span class="bar middle-bar"></span>
+            <span class="bar bottom-bar"></span>
+          </div>
+        </button>
       </div>
-      <div class="flex items-center justify-center md:hidden">
-        <a
-          href="#o-nama"
-          class="rounded-full p-3 px-6 text-white hover:text-green-secondary"
-          >O nama</a
-        >
-        <a
-          href="#agenda"
-          class="rounded-full p-3 px-6 text-white hover:text-green-secondary"
-          >Agenda</a
-        >
-        <a
-          href="#predavaci"
-          class="rounded-full p-3 px-6 text-white hover:text-green-secondary"
-          >Predavači</a
-        >
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="border-b-4 border-green-secondary bg-green-primary">
+        <a href="#o-nama">O nama</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#predavaci">Predavači</a>
+        <a href="#organizatori">Organizatori</a>
+        <a href="" target="_blank">Prijavi se</a>
       </div>
     </nav>
     <main>
@@ -721,6 +715,7 @@
       <div class="w-1/12"></div>
     </footer>
   </body>
+  <script src="/main.js" type="module"></script>
   <script src="/index-gallery.js" type="module"></script>
   <script src="/index-ocean.js" type="module"></script>
 </html>
