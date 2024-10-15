@@ -72,6 +72,17 @@
   .cursor-fishing {
     cursor: url("/images/cursors/fishing-rod.png"), auto;
   }
+
+  /* For observable fade effect */
+  .obs-fade {
+    transition:
+      opacity 1s ease-out,
+      transform 0.5s ease-out !important;
+  }
+  .obs-fade.obs-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
 
 @layer components {
