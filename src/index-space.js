@@ -14,6 +14,8 @@ const detectCollision = (bolt, alien) => {
 
 const container = document.querySelector("#space-container");
 const spaceship = document.querySelector("#spaceship");
+let alienSpawnTimeout;
+let autoShootTimeout;
 
 const createAlien = () => {
   const alien = document.createElement("img");
@@ -25,11 +27,6 @@ const createAlien = () => {
   container.appendChild(alien);
 
   alien.addEventListener("animationend", () => alien.remove());
-};
-
-const spawnAliens = () => {
-  createAlien();
-  setInterval(createAlien, 2000);
 };
 
 const shootBlaster = () => {
@@ -64,8 +61,41 @@ const shootBlaster = () => {
 
 const autoShoot = () => {
   shootBlaster();
-  setTimeout(autoShoot, random(50, 1000));
+  autoShootTimeout = setTimeout(autoShoot, random(50, 1000));
 };
 
-spawnAliens();
-autoShoot();
+const spawnAliens = () => {
+  createAlien();
+  alienSpawnTimeout = setTimeout(spawnAliens, random(500, 2000));
+};
+
+const startGame = () => {
+  autoShoot();
+  spawnAliens();
+  container.classList.remove("paused");
+};
+
+const stopGame = () => {
+  clearTimeout(autoShootTimeout);
+  clearTimeout(alienSpawnTimeout);
+  container.classList.add("paused");
+};
+
+// Observer to track when the game container enters or leaves the viewport
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // If the container is visible
+        startGame();
+      } else {
+        // If the container is not visible
+        stopGame();
+      }
+    });
+  },
+  {
+    threshold: 0.1, // stop when less than 10% of the container is visible
+  },
+);
+observer.observe(container);

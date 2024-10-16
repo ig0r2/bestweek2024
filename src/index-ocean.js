@@ -40,12 +40,14 @@ const fishData = [
 ];
 
 const container = document.getElementById("fish-container");
+let generateBubblesInterval;
 
 const addFish = (fishType, count) => {
   const containerHeight = container.getBoundingClientRect().height;
 
   for (let i = 0; i < count; i++) {
     const fish = document.createElement("img");
+    fish.classList.add("fish");
     fish.classList.add("absolute");
     fish.src = fishType.src;
     fish.style.width = fishType.width + "rem";
@@ -61,11 +63,11 @@ const addFish = (fishType, count) => {
   }
 };
 
-// Add 3-10 fish of each type (wait 2sec for container to gain proper height)
+// Add 3-5 fish of each type (wait 2sec for container to gain proper height)
 setTimeout(
   () =>
     fishData.forEach((fishType) => {
-      addFish(fishType, random(3, 10));
+      addFish(fishType, random(3, 5));
     }),
   2000,
 );
@@ -73,6 +75,7 @@ setTimeout(
 const generateBubbles = (count) => {
   for (let i = 0; i < count; i++) {
     const bubble = document.createElement("img");
+    bubble.classList.add("bubble");
     bubble.classList.add("absolute");
     bubble.src = "/images/assets/bubble-fill.png";
     bubble.style.bottom = "50px";
@@ -91,7 +94,34 @@ const generateBubbles = (count) => {
   }
 };
 
-// Generate 10 bubbles every 2 seconds
-setInterval(() => {
-  generateBubbles(10);
-}, 2000);
+const startAnimation = () => {
+  // Generate 10 bubbles every 2 seconds
+  generateBubblesInterval = setInterval(() => {
+    generateBubbles(10);
+  }, 2000);
+  container.classList.remove("paused");
+};
+
+const stopAnimation = () => {
+  clearInterval(generateBubblesInterval);
+  container.classList.add("paused");
+};
+
+// Observer to track when the container enters or leaves the viewport
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // If the container is visible
+        startAnimation();
+      } else {
+        // If the container is not visible
+        stopAnimation();
+      }
+    });
+  },
+  {
+    threshold: 0.1, // stop when less than 10% of the container is visible
+  },
+);
+observer.observe(container);

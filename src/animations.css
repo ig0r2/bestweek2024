@@ -1,6 +1,7 @@
 @tailwind components;
 
 @layer components {
+  /* WATER */
   @keyframes moveFish1 {
     0% {
       transform: translate(-10vw, 0rem);
@@ -221,6 +222,7 @@
     }
   }
 
+  /* SPACE */
   #spaceship {
     animation: moveSpaceship 30s ease-in-out infinite;
   }
@@ -274,7 +276,6 @@
       transform: translate(-10vw, -2rem); /* Move back off-screen on the left */
     }
   }
-
   .bolt {
     @apply absolute w-20;
     animation: moveBolt 2s linear;
@@ -308,5 +309,14 @@
     100% {
       transform: translate(110vw, 4rem);
     }
+  }
+
+  /* For pausing animation */
+  .paused .fish,
+  .paused .bubble,
+  .paused #spaceship,
+  .paused .bolt,
+  .paused .alien {
+    animation-play-state: paused !important;
   }
 }
