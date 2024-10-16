@@ -103,52 +103,6 @@
     @apply translate-x-0 opacity-100;
   }
 
-  .spaceship {
-    animation: moveSpaceship 3s ease-in-out infinite;
-  }
-  /* Keyframe animation to move the spaceship around */
-  @keyframes moveSpaceship {
-    0% {
-      transform: translate(0, 0); /* Start centered */
-    }
-    25% {
-      transform: translate(-50px, -25px); /* Move left and slightly up */
-    }
-    50% {
-      transform: translate(25px, -50px); /* Move right and further up */
-    }
-    75% {
-      transform: translate(-50px, -25px); /* Move back left */
-    }
-    100% {
-      transform: translate(0, 0); /* Return to starting point */
-    }
-  }
-
-  /* .whale {
-    animation: moveWhale 30s ease-in-out infinite;
-  }
-  @keyframes moveWhale {
-    0% {
-      transform: translate(0, 5em);
-    }
-    25% {
-      transform: translate(40vw, 5em);
-    }
-    50% {
-      transform: translate(90vw, 8em);
-    }
-    51% {
-      transform: translate(90vw, 8em) scaleX(-1);
-    }
-    75% {
-      transform: translate(35vw, 8em) scaleX(-1);
-    }
-    100% {
-      transform: translate(0, 5em) scaleX(-1);
-    }
-  } */
-
   .gallery-image {
     @apply relative;
   }

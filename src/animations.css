@@ -220,4 +220,93 @@
       transform: translateY(-80rem);
     }
   }
+
+  #spaceship {
+    animation: moveSpaceship 30s ease-in-out infinite;
+  }
+  @keyframes moveSpaceship {
+    0% {
+      transform: translate(-10vw, -2rem); /* Start off-screen on the left */
+    }
+    5% {
+      transform: translate(5vw, -1rem); /* Quickly move closer to the center */
+    }
+    10% {
+      transform: translate(20vw, -2rem); /* Move near the left, but not fully */
+    }
+    20% {
+      transform: translate(80vw, -3rem); /* Quickly dart towards the right */
+    }
+    30% {
+      transform: translate(90vw, -2rem); /* Stay near the right edge */
+    }
+    35% {
+      transform: translate(95vw, -2.5rem); /* Linger at the right edge */
+    }
+    40% {
+      transform: translate(
+        90vw,
+        -3rem
+      ); /* Slight movement near the right edge */
+    }
+    50% {
+      transform: translate(60vw, -2rem); /* Move towards the center quickly */
+    }
+    55% {
+      transform: translate(70vw, -3rem); /* Brief stop near the center */
+    }
+    60% {
+      transform: translate(90vw, -2rem); /* Back to the right edge */
+    }
+    70% {
+      transform: translate(10vw, -1rem); /* Quickly dart to the left */
+    }
+    75% {
+      transform: translate(5vw, -2rem); /* Stay near the left edge */
+    }
+    80% {
+      transform: translate(0vw, -1.5rem); /* Linger near the left edge */
+    }
+    90% {
+      transform: translate(10vw, -2rem); /* Slight movement near the left */
+    }
+    100% {
+      transform: translate(-10vw, -2rem); /* Move back off-screen on the left */
+    }
+  }
+
+  .bolt {
+    @apply absolute w-20;
+    animation: moveBolt 2s linear;
+  }
+  @keyframes moveBolt {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-150vh);
+    }
+  }
+
+  .alien {
+    @apply absolute w-10;
+    animation: moveAlien 10s linear;
+  }
+  @keyframes moveAlien {
+    0% {
+      transform: translate(-10vw, 4rem);
+    }
+    25% {
+      transform: translate(25vw, -4rem);
+    }
+    50% {
+      transform: translate(50vw, 4rem);
+    }
+    75% {
+      transform: translate(75vw, -4rem);
+    }
+    100% {
+      transform: translate(110vw, 4rem);
+    }
+  }
 }

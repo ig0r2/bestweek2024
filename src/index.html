@@ -352,18 +352,14 @@
         <!-- PREDAVACI div -->
         <div id="predavaci" class="cursor-lightsaber relative pt-8">
           <!-- Spacebattle area -->
-          <div class="absolute bottom-0 left-0 top-0 w-40 overflow-hidden">
-            <!-- Spaceship area -->
-            <div class="absolute bottom-6 flex w-full justify-center">
-              <img
-                class="absolute bottom-52 hidden w-2"
-                src="/images/assets/ship-bolt@0.5x.png"
-                alt="" />
-              <img
-                class="spaceship w-20"
-                src="/images/assets/spaceship.png"
-                alt="spaceship" />
-            </div>
+          <div
+            id="space-container"
+            class="absolute bottom-0 left-0 right-0 top-0 overflow-hidden">
+            <img
+              id="spaceship"
+              class="absolute bottom-8 left-0 w-20"
+              src="/images/assets/spaceship.png"
+              alt="spaceship" />
           </div>
           <h1
             class="obs-fade obs-hidden mx-auto w-max border-4 border-blue-secondary bg-[#1b4e79] p-2 px-4 text-center font-homevideo font-normal text-blue-secondary">
@@ -764,5 +760,6 @@
   </body>
   <script src="/main.js" type="module"></script>
   <script src="/index-gallery.js" type="module"></script>
+  <script src="/index-space.js" type="module"></script>
   <script src="/index-ocean.js" type="module"></script>
 </html>
