@@ -5,8 +5,9 @@
     @apply hidden space-x-3 md:flex;
   }
   .desktop-menu a {
-    @apply p-3 px-6 text-white hover:text-green-secondary;
+    @apply game-button relative p-3 px-6 text-white hover:text-green-secondary;
   }
+  /* Mobile Menu */
   #mobile-menu {
     @apply absolute top-full flex w-full flex-col overflow-hidden md:hidden;
     transform: scaleY(0);
@@ -45,7 +46,7 @@
       opacity: 0;
     }
   }
-
+  /* Mobile menu hamburger */
   .hamburger-icon .bar {
     @apply block bg-white;
     width: 30px;

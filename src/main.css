@@ -86,6 +86,20 @@
 }
 
 @layer components {
+  .game-button {
+    @apply flex items-center;
+  }
+  .game-button .triangle {
+    @apply mr-2 fill-green-secondary opacity-0;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    transform: translateX(-10px);
+  }
+  .game-button:hover .triangle {
+    @apply translate-x-0 opacity-100;
+  }
+
   .spaceship {
     animation: moveSpaceship 3s ease-in-out infinite;
   }
