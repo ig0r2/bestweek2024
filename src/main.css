@@ -63,6 +63,9 @@
   body {
     cursor: url("/images/cursors/sword@0.5x.png"), auto;
   }
+  .cursor-shovel {
+    cursor: url("/images/cursors/iron-shovel.png"), auto;
+  }
   .cursor-pickaxe {
     cursor: url("/images/cursors/diamond-pickaxe.png"), auto;
   }
