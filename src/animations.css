@@ -224,7 +224,12 @@
 
   /* SPACE */
   #spaceship {
-    animation: moveSpaceship 30s ease-in-out infinite;
+    animation: moveSpaceship 20s ease-in-out infinite;
+  }
+  @media screen(md) {
+    #spaceship {
+      animation: moveSpaceship 30s ease-in-out infinite;
+    }
   }
   @keyframes moveSpaceship {
     0% {
@@ -291,7 +296,12 @@
 
   .alien {
     @apply absolute w-10;
-    animation: moveAlien 10s linear;
+    animation: moveAlien 5s linear;
+  }
+  @media screen(md) {
+    .alien {
+      animation: moveAlien 10s linear;
+    }
   }
   @keyframes moveAlien {
     0% {
