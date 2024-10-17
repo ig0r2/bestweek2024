@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+    </script>
     <!-- Navbar -->
     <nav class="sticky left-0 top-0 z-50 mx-auto w-full font-homevideo">
       <div
@@ -25,6 +28,8 @@
             ><svg
               class="triangle w-3"
               viewBox="0 0 10 10"
+              width="10px"
+              heigth="10px"
               xmlns="http://www.w3.org/2000/svg">
               <polygon points="0,0 10,5 0,10" />
             </svg>
@@ -34,6 +39,8 @@
             ><svg
               class="triangle w-3"
               viewBox="0 0 10 10"
+              width="10px"
+              heigth="10px"
               xmlns="http://www.w3.org/2000/svg">
               <polygon points="0,0 10,5 0,10" /></svg
             >Agenda</a
@@ -42,6 +49,8 @@
             ><svg
               class="triangle w-3"
               viewBox="0 0 10 10"
+              width="10px"
+              heigth="10px"
               xmlns="http://www.w3.org/2000/svg">
               <polygon points="0,0 10,5 0,10" /></svg
             >Predavači</a
@@ -50,6 +59,8 @@
             ><svg
               class="triangle w-3"
               viewBox="0 0 10 10"
+              width="10px"
+              heigth="10px"
               xmlns="http://www.w3.org/2000/svg">
               <polygon points="0,0 10,5 0,10" /></svg
             >Organizatori</a
@@ -62,6 +73,8 @@
           ><svg
             class="triangle w-3"
             viewBox="0 0 10 10"
+            width="10px"
+            heigth="10px"
             xmlns="http://www.w3.org/2000/svg">
             <polygon points="0,0 10,5 0,10" /></svg
           >Prijavi se</a
@@ -92,10 +105,11 @@
     <main>
       <!-- START SECTION -->
       <section
-        class="relative flex min-h-[70vh] flex-col overflow-hidden bg-[url('/images/backgrounds/sky-with-clouds.png')] bg-cover bg-fixed font-offbit">
+        class="relative flex min-h-[75vh] flex-col overflow-hidden bg-[url('/images/backgrounds/sky-with-clouds.png')] bg-cover bg-fixed font-offbit md:min-h-[70vh]">
         <div class="flex flex-wrap pb-10 pt-10 md:pt-20">
           <!-- Banner Main -->
-          <div class="relative w-full max-w-lg pb-5 pr-8 md:max-w-3xl md:pt-20">
+          <div
+            class="relative min-h-40 w-full max-w-lg pb-5 pr-8 md:max-w-3xl md:pt-20">
             <img src="/images/assets/banner-main.png" alt="banner" />
             <div class="absolute top-0 hidden px-2 py-8 text-red-secondary">
               <h1 class="text-6xl">BEST Week 24</h1>
@@ -131,6 +145,8 @@
             ><svg
               class="triangle w-5"
               viewBox="0 0 10 10"
+              width="16px"
+              heigth="16px"
               xmlns="http://www.w3.org/2000/svg">
               <polygon points="0,0 10,5 0,10" /></svg
             >Prijavi se</a
