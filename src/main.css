@@ -103,6 +103,26 @@
     @apply translate-x-0 opacity-100;
   }
 
+  .card-predavaci {
+    @apply relative m-4 flex w-72 cursor-pointer flex-col border-4 border-[#21c7cd] bg-[#1b4e79] p-4 text-center hover:bg-blue-primary;
+  }
+  #predavaci-modal {
+    @apply cursor-lightsaber fixed bottom-0 left-0 right-0 top-0 z-50 flex items-center justify-center bg-[rgba(0,0,0,.8)];
+    @apply opacity-0;
+    transition: opacity 0.25s ease-in-out;
+  }
+  #predavaci-modal .content {
+    @apply container max-h-[92vh] overflow-y-scroll border-4 border-[#21c7cd] bg-[#1b4e79] font-covid19 text-blue-secondary;
+    @apply scale-50;
+    transition: transform 0.25s ease-in-out;
+  }
+  #predavaci-modal.fade-in {
+    @apply opacity-100;
+  }
+  #predavaci-modal.fade-in .content {
+    @apply scale-100;
+  }
+
   .gallery-image {
     @apply relative;
   }

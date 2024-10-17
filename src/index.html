@@ -427,10 +427,9 @@
           </h1>
           <!-- Predavaci Cards -->
           <div
-            class="mx-auto flex w-full max-w-7xl flex-wrap justify-evenly p-2 text-blue-secondary [&>*]:m-4 [&>*]:bg-[#1b4e79]">
+            class="mx-auto flex w-full max-w-7xl flex-wrap justify-evenly p-2 text-blue-secondary">
             <!-- Card -->
-            <div
-              class="obs-fade obs-hidden relative flex w-72 flex-col border-4 border-[#21c7cd] p-4 text-center">
+            <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
                 src="/images/assets/border-blue-top-left.png" />
@@ -445,19 +444,28 @@
                 src="/images/assets/border-blue-top-left.png" />
               <div>
                 <img
+                  data-id="slika"
                   src="https://bestweek2023.bestnis.rs/wp-content/uploads/2023/12/vladimir-sibinovic-480x480.png"
                   alt="" />
               </div>
-              <h3 class="mt-2 font-bold">Vladimir Sibinović</h3>
-              <p class="text-sm">Asistent na Elektronskom fakultetu u Nišu.</p>
+              <h3 class="mt-2 font-bold" data-id="ime">Vladimir Sibinović</h3>
+              <p class="text-sm" data-id="zvanje">
+                Asistent na Elektronskom fakultetu u Nišu.
+              </p>
               <p class="text-md mt-4">Tema predavanja:</p>
-              <p class="text-md font-homevideo">
+              <p class="text-md font-homevideo" data-id="predavanje">
                 Hoće li mi robot uzeti posao?
               </p>
+              <p data-id="bio" class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente doloremque ullam alias blanditiis et doloribus
+                explicabo eaque, eum repellat nisi!
+              </p>
+              <p data-id="tel" class="hidden">+381 60 0000</p>
+              <p class="mt-4 text-xs opacity-70">Više informacija</p>
             </div>
             <!-- Card -->
-            <div
-              class="obs-fade obs-hidden relative flex w-72 flex-col border-4 border-[#21c7cd] p-4 text-center">
+            <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
                 src="/images/assets/border-blue-top-left.png" />
@@ -472,22 +480,29 @@
                 src="/images/assets/border-blue-top-left.png" />
               <div>
                 <img
+                  data-id="slika"
                   src="https://bestweek2023.bestnis.rs/wp-content/uploads/2023/12/ivan-ciric-480x480.png"
                   alt="" />
               </div>
-              <h3 class="mt-2 font-bold">Ivan Ćirić</h3>
-              <p class="text-sm">
+              <h3 class="mt-2 font-bold" data-id="ime">Ivan Ćirić</h3>
+              <p class="text-sm" data-id="zvanje">
                 Vandredni profesor na Mašinskom fakultetu u Nišu.
               </p>
               <p class="text-md mt-4">Tema predavanja:</p>
-              <p class="text-md font-homevideo">
+              <p class="text-md font-homevideo" data-id="predavanje">
                 Veštačka inteligencija i kompjuterska vizija u kolaborativnoj
                 robotici.
               </p>
+              <p data-id="bio" class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente doloremque ullam alias blanditiis et doloribus
+                explicabo eaque, eum repellat nisi!
+              </p>
+              <p data-id="tel" class="hidden">+381 60 0000</p>
+              <p class="mt-4 text-xs opacity-70">Više informacija</p>
             </div>
             <!-- Card -->
-            <div
-              class="obs-fade obs-hidden relative flex w-72 flex-col border-4 border-[#21c7cd] p-4 text-center">
+            <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
                 src="/images/assets/border-blue-top-left.png" />
@@ -502,20 +517,29 @@
                 src="/images/assets/border-blue-top-left.png" />
               <div>
                 <img
+                  data-id="slika"
                   src="https://bestweek2023.bestnis.rs/wp-content/uploads/2023/12/jelena-nedeljkovic-480x480.png"
                   alt="" />
               </div>
-              <h3 class="mt-2 font-bold">Jelena Nedeljković</h3>
-              <p class="text-sm">Asistent na Elektronskom fakultetu u Nišu.</p>
+              <h3 class="mt-2 font-bold" data-id="ime">Jelena Nedeljković</h3>
+              <p class="text-sm" data-id="zvanje">
+                Asistent na Elektronskom fakultetu u Nišu.
+              </p>
               <p class="text-md mt-4">Tema predavanja:</p>
-              <p class="text-md font-homevideo">
+              <p class="text-md font-homevideo" data-id="predavanje">
                 Sigurnosni loT sistem i projektovanje RFID antene primenom
                 veštačkih neuronskih mreža.
               </p>
+              <p data-id="bio" class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente doloremque ullam alias blanditiis et doloribus
+                explicabo eaque, eum repellat nisi!
+              </p>
+              <p data-id="tel" class="hidden">+381 60 0000</p>
+              <p class="mt-4 text-xs opacity-70">Više informacija</p>
             </div>
             <!-- Card -->
-            <div
-              class="obs-fade obs-hidden relative flex w-72 flex-col border-4 border-[#21c7cd] p-4 text-center">
+            <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
                 src="/images/assets/border-blue-top-left.png" />
@@ -530,20 +554,29 @@
                 src="/images/assets/border-blue-top-left.png" />
               <div>
                 <img
+                  data-id="slika"
                   src="https://bestweek2023.bestnis.rs/wp-content/uploads/2023/12/ksenija-pesic-480x480.png"
                   alt="" />
               </div>
-              <h3 class="mt-2 font-bold">Ksenija Pešić</h3>
-              <p class="text-sm">Asistent na Elektronskom fakultetu u Nišu.</p>
+              <h3 class="mt-2 font-bold" data-id="ime">Ksenija Pešić</h3>
+              <p class="text-sm" data-id="zvanje">
+                Asistent na Elektronskom fakultetu u Nišu.
+              </p>
               <p class="text-md mt-4">Tema predavanja:</p>
-              <p class="text-md font-homevideo">
+              <p class="text-md font-homevideo" data-id="predavanje">
                 Sigurnosni loT sistem i projektovanje RFID antene primenom
                 veštačkih neuronskih mreža.
               </p>
+              <p data-id="bio" class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente doloremque ullam alias blanditiis et doloribus
+                explicabo eaque, eum repellat nisi!
+              </p>
+              <p data-id="tel" class="hidden">+381 60 0000</p>
+              <p class="mt-4 text-xs opacity-70">Više informacija</p>
             </div>
             <!-- Card -->
-            <div
-              class="obs-fade obs-hidden relative flex w-72 flex-col border-4 border-[#21c7cd] p-4 text-center">
+            <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
                 src="/images/assets/border-blue-top-left.png" />
@@ -558,20 +591,29 @@
                 src="/images/assets/border-blue-top-left.png" />
               <div>
                 <img
+                  data-id="slika"
                   src="https://bestweek2023.bestnis.rs/wp-content/uploads/2023/12/tijana-vuckovic-480x480.png"
                   alt="" />
               </div>
-              <h3 class="mt-2 font-bold">Tijana Vučković</h3>
-              <p class="text-sm">Student na Elektronskom fakultetu u Nišu.</p>
+              <h3 class="mt-2 font-bold" data-id="ime">Tijana Vučković</h3>
+              <p class="text-sm" data-id="zvanje">
+                Student na Elektronskom fakultetu u Nišu.
+              </p>
               <p class="text-md mt-4">Tema predavanja:</p>
-              <p class="text-md font-homevideo">
+              <p class="text-md font-homevideo" data-id="predavanje">
                 Sigurnosni loT sistem i projektovanje RFID antene primenom
                 veštačkih neuronskih mreža.
               </p>
+              <p data-id="bio" class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente doloremque ullam alias blanditiis et doloribus
+                explicabo eaque, eum repellat nisi!
+              </p>
+              <p data-id="tel" class="hidden">+381 60 0000</p>
+              <p class="mt-4 text-xs opacity-70">Više informacija</p>
             </div>
             <!-- Card -->
-            <div
-              class="obs-fade obs-hidden relative flex w-72 flex-col border-4 border-[#21c7cd] p-4 text-center">
+            <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
                 src="/images/assets/border-blue-top-left.png" />
@@ -586,16 +628,56 @@
                 src="/images/assets/border-blue-top-left.png" />
               <div>
                 <img
+                  data-id="slika"
                   src="https://bestweek2023.bestnis.rs/wp-content/uploads/2023/12/bojan-savic-480x480.png"
                   alt="" />
               </div>
-              <h3 class="mt-2 font-bold">Bojan Savić</h3>
-              <p class="text-sm">Inženjer održanja u Johnson Electric.</p>
+              <h3 class="mt-2 font-bold" data-id="ime">Bojan Savić</h3>
+              <p class="text-sm" data-id="zvanje">
+                Inženjer održanja u Johnson Electric.
+              </p>
               <p class="text-md mt-4">Tema predavanja:</p>
-              <p class="text-md font-homevideo">
+              <p class="text-md font-homevideo" data-id="predavanje">
                 Primena step/servo motora u konstrukciji automatskih mašina i
                 proizvodnih linija.
               </p>
+              <p data-id="bio" class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente doloremque ullam alias blanditiis et doloribus
+                explicabo eaque, eum repellat nisi! Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Natus officiis praesentium dolore
+                iusto culpa necessitatibus adipisci qui laudantium porro?
+                Dolores ab velit numquam voluptate. Itaque quisquam delectus
+                dignissimos nemo sint eius tempora sunt, reiciendis quo sit,
+                aliquid ut sapiente illo veniam illum unde numquam ea quod nobis
+                facilis. Illum, fugiat! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ratione obcaecati saepe eveniet sapiente,
+                suscipit accusamus, incidunt nihil alias deserunt magni harum
+                culpa. Id omnis voluptates impedit in blanditiis perferendis
+                eos, maiores porro delectus magni ipsa, laboriosam qui
+                asperiores, architecto inventore iure accusamus numquam nisi
+                obcaecati at! Quas cupiditate quia labore repellat illum ab
+                laboriosam. Incidunt quod quo eveniet accusamus, amet modi harum
+                numquam maiores nostrum tempore eius sapiente aperiam et totam
+                quibusdam delectus veniam repellat? Culpa dicta atque eligendi
+                debitis incidunt repellendus, animi, unde molestiae labore totam
+                impedit doloribus natus nemo? Sequi sed ipsum exercitationem
+                distinctio facere iure illo magni! Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Reiciendis in ratione accusamus
+                enim quae error dicta assumenda, ipsum eveniet harum mollitia
+                dignissimos, officiis laudantium nemo asperiores quo eos esse
+                nesciunt voluptate! Aspernatur, porro? Quam repudiandae vel quia
+                unde facere! Id a blanditiis laborum voluptates minima minus,
+                perferendis facilis, aperiam alias, reiciendis culpa dignissimos
+                est dolorem impedit natus. Repellendus, et. Eligendi, culpa
+                veritatis. Officia voluptatibus molestiae eos, ullam harum,
+                eveniet ipsa consequatur optio quibusdam repellendus mollitia,
+                nostrum in atque? Eaque soluta ullam mollitia molestiae
+                repellendus quidem ducimus animi nemo, vitae, accusamus quos at
+                asperiores rem officiis vel ipsam aut quisquam necessitatibus?
+              </p>
+              <p data-id="tel" class="hidden">+381 60 0000</p>
+              <p class="mt-4 text-xs opacity-70">Više informacija</p>
             </div>
           </div>
         </div>
@@ -886,9 +968,31 @@
       </div>
       <div class="w-1/12"></div>
     </footer>
+    <!-- Predavaci Modal -->
+    <div id="predavaci-modal" class="!hidden">
+      <div class="content flex flex-col md:flex-row">
+        <span class="close absolute right-4 top-2 cursor-pointer text-4xl"
+          >&times;</span
+        >
+        <div class="mx-auto flex w-64 flex-col p-4 text-center">
+          <img data-id="slika" src="" alt="slika" />
+          <h3 data-id="ime" class="mt-2 font-bold"></h3>
+          <p data-id="zvanje" class="text-sm"></p>
+        </div>
+        <div class="flex flex-col p-4">
+          <p class="text-md mt-4">Kontakt:</p>
+          <a data-id="tel" class="w-max"></a>
+          <p class="text-md mt-4">Biografija:</p>
+          <p data-id="bio" class="text-sm"></p>
+          <p class="text-md mt-4">Tema predavanja:</p>
+          <p data-id="predavanje" class="font-homevideo text-xl"></p>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="/main.js" type="module"></script>
   <script src="/index-countdown.js" type="module"></script>
+  <script src="/index-modals.js" type="module"></script>
   <script src="/index-gallery.js" type="module"></script>
   <script src="/index-space.js" type="module"></script>
   <script src="/index-ocean.js" type="module"></script>
