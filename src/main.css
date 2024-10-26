@@ -73,7 +73,12 @@
     cursor: url("/images/cursors/lightsaber.png"), auto;
   }
   .cursor-fishing {
-    cursor: url("/images/cursors/fishing-rod.png"), auto;
+    cursor: url("/images/cursors/fishing-rod2.png"), auto;
+  }
+  a,
+  button,
+  .cursor-pointer-pixel {
+    cursor: url("/images/cursors/pointer-pixel.png"), auto;
   }
 
   /* For observable fade effect */
@@ -104,7 +109,7 @@
   }
 
   .card-predavaci {
-    @apply relative m-4 flex w-72 cursor-pointer flex-col border-4 border-[#21c7cd] bg-[#1b4e79] p-4 text-center hover:bg-blue-primary;
+    @apply relative m-4 flex w-72 cursor-pointer-pixel flex-col border-4 border-[#21c7cd] bg-[#1b4e79] p-4 text-center hover:bg-blue-primary;
   }
   #predavaci-modal {
     @apply cursor-lightsaber fixed bottom-0 left-0 right-0 top-0 z-50 flex items-center justify-center bg-[rgba(0,0,0,.8)];
