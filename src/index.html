@@ -24,60 +24,64 @@
         </a>
         <!-- Desktop Menu -->
         <div class="desktop-menu">
-          <a href="#o-nama"
-            ><svg
+          <a href="#o-nama">
+            <svg
               class="triangle w-3"
               viewBox="0 0 10 10"
               width="10px"
-              heigth="10px"
+              height="10px"
               xmlns="http://www.w3.org/2000/svg">
               <polygon points="0,0 10,5 0,10" />
             </svg>
             O nama</a
           >
-          <a href="#agenda"
-            ><svg
+          <a href="#agenda">
+            <svg
               class="triangle w-3"
               viewBox="0 0 10 10"
               width="10px"
-              heigth="10px"
+              height="10px"
               xmlns="http://www.w3.org/2000/svg">
-              <polygon points="0,0 10,5 0,10" /></svg
-            >Agenda</a
+              <polygon points="0,0 10,5 0,10" />
+            </svg>
+            Agenda</a
           >
-          <a href="#predavaci"
-            ><svg
+          <a href="#predavaci">
+            <svg
               class="triangle w-3"
               viewBox="0 0 10 10"
               width="10px"
-              heigth="10px"
+              height="10px"
               xmlns="http://www.w3.org/2000/svg">
-              <polygon points="0,0 10,5 0,10" /></svg
-            >Predavači</a
+              <polygon points="0,0 10,5 0,10" />
+            </svg>
+            Predavači</a
           >
-          <a href="#organizatori"
-            ><svg
+          <a href="#organizatori">
+            <svg
               class="triangle w-3"
               viewBox="0 0 10 10"
               width="10px"
-              heigth="10px"
+              height="10px"
               xmlns="http://www.w3.org/2000/svg">
-              <polygon points="0,0 10,5 0,10" /></svg
-            >Organizatori</a
+              <polygon points="0,0 10,5 0,10" />
+            </svg>
+            Organizatori</a
           >
         </div>
         <a
           href=""
           target="_blank"
-          class="game-button bg-primary hidden p-3 px-6 text-white hover:text-green-secondary md:flex"
-          ><svg
+          class="game-button bg-primary hidden p-3 px-6 text-white hover:text-green-secondary md:flex">
+          <svg
             class="triangle w-3"
             viewBox="0 0 10 10"
             width="10px"
-            heigth="10px"
+            height="10px"
             xmlns="http://www.w3.org/2000/svg">
-            <polygon points="0,0 10,5 0,10" /></svg
-          >Prijavi se</a
+            <polygon points="0,0 10,5 0,10" />
+          </svg>
+          Prijavi se</a
         >
         <!-- Hamburger Button -->
         <button
@@ -110,46 +114,55 @@
           <!-- Banner Main -->
           <div
             class="relative min-h-40 w-full max-w-lg pb-5 pr-8 md:max-w-3xl md:pt-20">
-            <img src="/images/assets/banner-main.png" alt="banner" />
-            <div class="absolute top-0 hidden px-2 py-8 text-red-secondary">
-              <h1 class="text-6xl">BEST Week 24</h1>
-              <p class="mt-2 text-4xl">Where good becomes the BEST</p>
-            </div>
+            <img src="/images/assets/banner-main-title.png" alt="banner" />
           </div>
           <!-- Banners Right -->
           <div
             class="relative ml-auto flex w-full max-w-sm flex-col space-y-4 pl-8 md:max-w-md">
             <img
-              class="translate-x-12 hover:translate-x-0"
-              src="/images/assets/banner-topic-wider.png"
+              class="translate-x-9 hover:translate-x-0"
+              src="/images/assets/banner-topic.png"
               alt="banner" />
             <a href="#lokacija">
               <img
-                class="translate-x-12 hover:translate-x-0"
-                src="/images/assets/banner-location-wider.png"
+                class="translate-x-9 hover:translate-x-0"
+                src="/images/assets/banner-location.png"
                 alt="banner"
             /></a>
             <a href="#agenda">
               <img
-                class="translate-x-12 hover:translate-x-0"
-                src="/images/assets/banner-date-wider.png"
+                class="translate-x-9 hover:translate-x-0"
+                src="/images/assets/banner-date.png"
                 alt="banner"
             /></a>
+            <!-- For SEO-->
+            <div class="absolute hidden">
+              <h1>BEST Week 24</h1>
+              <p>Where good becomes the BEST</p>
+              <h1>Tema:</h1>
+              <p>Game Development</p>
+              <h1>Lokacija:</h1>
+              <p>Zgrada Mašinskog fakulteta u Nišu</p>
+              <h1>Datum:</h1>
+              <p>12-15. Decembar 2024.</p>
+            </div>
           </div>
         </div>
         <!-- Prijavi se -->
-        <div class="flex w-full flex-col items-center justify-end space-y-2">
+        <div
+          class="mt-auto flex w-full flex-col items-center justify-end space-y-2 pb-2">
           <a
             href=""
-            class="game-button mt-4 animate-pulse font-homevideo text-4xl drop-shadow-[0_1.2px_1.2px_black] hover:animate-none"
-            ><svg
+            class="game-button mt-4 animate-pulse font-homevideo text-4xl drop-shadow-[0_1.2px_1.2px_black] hover:animate-none">
+            <svg
               class="triangle w-5"
               viewBox="0 0 10 10"
               width="16px"
-              heigth="16px"
+              height="16px"
               xmlns="http://www.w3.org/2000/svg">
-              <polygon points="0,0 10,5 0,10" /></svg
-            >Prijavi se</a
+              <polygon points="0,0 10,5 0,10" />
+            </svg>
+            Prijavi se</a
           >
           <!-- Countdown -->
           <div
@@ -432,16 +445,20 @@
             <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -right-4 -top-4 w-10 rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -right-4 w-10 rotate-180"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -left-4 w-10 -rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <div>
                 <img
                   data-id="slika"
@@ -468,16 +485,20 @@
             <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -right-4 -top-4 w-10 rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -right-4 w-10 rotate-180"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -left-4 w-10 -rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <div>
                 <img
                   data-id="slika"
@@ -505,16 +526,20 @@
             <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -right-4 -top-4 w-10 rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -right-4 w-10 rotate-180"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -left-4 w-10 -rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <div>
                 <img
                   data-id="slika"
@@ -542,16 +567,20 @@
             <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -right-4 -top-4 w-10 rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -right-4 w-10 rotate-180"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -left-4 w-10 -rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <div>
                 <img
                   data-id="slika"
@@ -579,16 +608,20 @@
             <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -right-4 -top-4 w-10 rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -right-4 w-10 rotate-180"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -left-4 w-10 -rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <div>
                 <img
                   data-id="slika"
@@ -616,16 +649,20 @@
             <div class="obs-fade obs-hidden card-predavaci">
               <img
                 class="absolute -left-4 -top-4 w-10"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -right-4 -top-4 w-10 rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -right-4 w-10 rotate-180"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <img
                 class="absolute -bottom-4 -left-4 w-10 -rotate-90"
-                src="/images/assets/border-blue-top-left.png" />
+                src="/images/assets/border-blue-top-left.png"
+                alt="" />
               <div>
                 <img
                   data-id="slika"
@@ -701,7 +738,8 @@
               <div class="relative p-6">
                 <img
                   class="absolute -left-0 -top-0"
-                  src="/images/assets/frame-brown-4x5.png" />
+                  src="/images/assets/frame-brown-4x5.png"
+                  alt="" />
                 <img src="/images/ct/djordje.jpg" alt="" />
               </div>
               <div class="mt-2 border-4 border-blue-secondary bg-[#1b4e79] p-2">
@@ -714,7 +752,8 @@
               <div class="relative p-6">
                 <img
                   class="absolute -left-0 -top-0"
-                  src="/images/assets/frame-brown-4x5.png" />
+                  src="/images/assets/frame-brown-4x5.png"
+                  alt="" />
                 <img src="/images/ct/nenad.jpg" alt="" />
               </div>
               <div class="mt-2 border-4 border-blue-secondary bg-[#1b4e79] p-2">
@@ -727,7 +766,8 @@
               <div class="relative p-6">
                 <img
                   class="absolute -left-0 -top-0"
-                  src="/images/assets/frame-brown-4x5.png" />
+                  src="/images/assets/frame-brown-4x5.png"
+                  alt="" />
                 <img src="/images/ct/nadja.jpg" alt="" />
               </div>
               <div class="mt-2 border-4 border-blue-secondary bg-[#1b4e79] p-2">
@@ -740,7 +780,8 @@
               <div class="relative p-6">
                 <img
                   class="absolute -left-0 -top-0"
-                  src="/images/assets/frame-brown-4x5.png" />
+                  src="/images/assets/frame-brown-4x5.png"
+                  alt="" />
                 <img src="/images/ct/kristina.jpg" alt="" />
               </div>
               <div class="mt-2 border-4 border-blue-secondary bg-[#1b4e79] p-2">
@@ -753,7 +794,8 @@
               <div class="relative p-6">
                 <img
                   class="absolute -left-0 -top-0"
-                  src="/images/assets/frame-brown-4x5.png" />
+                  src="/images/assets/frame-brown-4x5.png"
+                  alt="" />
                 <img src="/images/ct/luka.jpg" alt="" />
               </div>
               <div class="mt-2 border-4 border-blue-secondary bg-[#1b4e79] p-2">
@@ -766,7 +808,8 @@
               <div class="relative p-6">
                 <img
                   class="absolute -left-0 -top-0"
-                  src="/images/assets/frame-brown-4x5.png" />
+                  src="/images/assets/frame-brown-4x5.png"
+                  alt="" />
                 <img src="/images/ct/darko.jpg" alt="" />
               </div>
               <div class="mt-2 border-4 border-blue-secondary bg-[#1b4e79] p-2">
@@ -779,7 +822,8 @@
               <div class="relative p-6">
                 <img
                   class="absolute -left-0 -top-0"
-                  src="/images/assets/frame-brown-4x5.png" />
+                  src="/images/assets/frame-brown-4x5.png"
+                  alt="" />
                 <img src="/images/ct/igor.jpg" alt="" />
               </div>
               <div class="mt-2 border-4 border-blue-secondary bg-[#1b4e79] p-2">
