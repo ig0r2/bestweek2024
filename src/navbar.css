@@ -2,14 +2,14 @@
 
 @layer components {
   .desktop-menu {
-    @apply hidden space-x-3 md:flex;
+    @apply hidden space-x-3 xl:flex;
   }
   .desktop-menu a {
     @apply game-button relative p-3 px-6 text-white hover:text-green-secondary;
   }
   /* Mobile Menu */
   #mobile-menu {
-    @apply absolute top-full flex w-full flex-col overflow-hidden md:hidden;
+    @apply absolute top-full flex w-full flex-col overflow-hidden xl:hidden;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
