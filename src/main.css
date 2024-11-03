@@ -117,7 +117,7 @@
     transition: opacity 0.25s ease-in-out;
   }
   #predavaci-modal .content {
-    @apply container max-h-[92vh] overflow-y-scroll border-4 border-[#21c7cd] bg-[#1b4e79] font-covid19 text-blue-secondary;
+    @apply container max-h-[92vh] overflow-y-auto border-4 border-[#21c7cd] bg-[#1b4e79] font-covid19 text-blue-secondary;
     @apply scale-50;
     transition: transform 0.25s ease-in-out;
   }
