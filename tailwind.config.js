@@ -17,6 +17,7 @@ export default {
         offbit: ["OffBit", "sans-serif"],
         homevideo: ["HomeVideo", "sans-serif"],
         covid19: ["Covid19", "sans-serif"],
+        pixeloidmono: ["PixeloidMono", "sans-serif"],
       },
     },
   },

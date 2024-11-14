@@ -35,6 +35,12 @@
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: "PixeloidMono";
+    src: url("/fonts/PixeloidMono.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
 
   :root {
     background-color: #9ebc4a;
