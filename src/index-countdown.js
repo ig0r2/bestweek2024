@@ -1,4 +1,4 @@
-const countdownTarget = Date.parse("2024-12-06T00:00:00Z");
+const countdownTarget = Date.parse("2024-12-08T00:00:00Z");
 let timer = 0;
 let tickInterval = null;
 
